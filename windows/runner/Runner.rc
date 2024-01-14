@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.thengodin" "\0"
-            VALUE "FileDescription", "booking" "\0"
+            VALUE "CompanyName", "com.example" "\0"
+            VALUE "FileDescription", "keuanganpribadi" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "booking" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2022 com.thengodin. All rights reserved." "\0"
-            VALUE "OriginalFilename", "booking.exe" "\0"
-            VALUE "ProductName", "booking" "\0"
+            VALUE "InternalName", "keuanganpribadi" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
+            VALUE "OriginalFilename", "keuanganpribadi.exe" "\0"
+            VALUE "ProductName", "keuanganpribadi" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
