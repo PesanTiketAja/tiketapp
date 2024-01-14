@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tiket/ui/transaksi_page.dart';
+import 'package:tiket/ui/home_page.dart';
 import 'package:tiket/ui/registrasi_page.dart';
 
 import '../bloc/login_bloc.dart';
@@ -104,8 +104,8 @@ class _LoginPageState extends State<LoginPage> {
         .then((value) async {
       await UserInfo().setToken(value.token.toString());
       await UserInfo().setUserID(int.parse(value.userID.toString()));
-      Navigator.pushReplacement(context,
-          MaterialPageRoute(builder: (context) => const TransaksiPage()));
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => const HomePage()));
     }, onError: (error) {
       print(error);
       showDialog(

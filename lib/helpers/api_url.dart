@@ -1,20 +1,20 @@
 class ApiUrl {
-  static const String baseUrl = 'http://10.0.2.2/kasku-api/public';
+  static const String baseUrl = 'http://localhost:8080';
 
   static const String registrasi = baseUrl + '/registrasi';
   static const String login = baseUrl + '/login';
-  static const String listTransaksi = baseUrl + '/transaksi';
-  static const String createTransaksi = baseUrl + '/transaksi';
+  static const String getallTiket = baseUrl + '/tiket';
+  static const String createTiket = baseUrl + '/tiket';
 
-  static String updateTransaksi(int id) {
-    return baseUrl + '/transaksi/' + id.toString() + '/ubah';
+  static String updateTiket(int id) {
+    return baseUrl + '/tiket/' + id.toString();
   }
 
-  static String showTransaksi(int id) {
-    return baseUrl + '/transaksi/' + id.toString();
+  static String oneTiket(int id) {
+    return baseUrl + '/tiket/' + id.toString();
   }
 
-  static String deleteTransaksi(int id) {
-    return baseUrl + '/transaksi/' + id.toString();
+  static String deleteTiket(int id) {
+    return baseUrl + '/tiket/' + id.toString();
   }
 }

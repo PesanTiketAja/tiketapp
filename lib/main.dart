@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tiket/helpers/user_info.dart';
+import 'package:tiket/ui/home_page.dart';
 import 'package:tiket/ui/login_page.dart';
-import 'package:tiket/ui/transaksi_page.dart';
-
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +27,7 @@ class _MyAppState extends State<MyApp> {
     var token = await UserInfo().getToken();
     if (token != null) {
       setState(() {
-        page = const TransaksiPage();
+        page = const HomePage();
       });
     } else {
       setState(() {
